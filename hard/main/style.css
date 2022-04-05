@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* components */
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 992px;
+    margin: 0 auto;
+    width: 100%;
+}
+.btn{
+    outline: none;
+    border: none;
+    background-color: #FC635E;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+hr{
+    border-bottom: 1px solid #ADADAD;
+}
+/* components end */
+/* header */
+.header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+}
+.header__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.header__logo span{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.header__content ul{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header__content ul li a{
+    text-transform: uppercase;
+    color: #F7F7F7;
+    transition: all .4s;
+}
+.header__content ul li a:hover{
+    border-bottom: 3px solid #FC635E;
+    color: #FC635E;
+}
+/* header end */
+
+/* section */
+.section{
+    min-height: 100%;
+}
+
+.section_wrapper{
+    background-image: url(../img/Слой\ 17.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.section_wrapper::before{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background-color: rgba(20, 20, 20, 0.493);
+}
+.container__header{
+    position: relative;
+}
+.section__title, .section__text p{
+    color: white;
+}
+.section__title{
+    text-transform: uppercase;
+    font-size: 40px;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.section__title::before, .section__title::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: #7D7C79;
+}
+.section__title::before{
+    left: -110px;
+    top: 42px;
+}
+.section__title::after{
+    right: -110px;
+    top: 42px;
+}
+.section__text p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.section__btn{
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #FC635E;
+    padding: 14px 30px;
+    border-radius: 5px;
+    color: #FC635E;
+    font-size: 20px;
+}
+
+.section__btn img{
+    position: absolute;
+    left: 200px;
+}
+.section_wrapper .mouse_down{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* section end */
+/* receive */
+
+.receive__header, .receive .container .mouse_down{
+    text-align: center;
+}
+.receive__header h2{
+    text-transform: uppercase;
+}
+.receive__header hr{
+    max-width: 335px;
+    margin: 15px auto 20px;
+}
+.receive__header p{
+    max-width: 510px;
+    margin: 0 auto;
+}
+.receive__content .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 80px 0 50px;
+}
+.card{
+    text-align: center;
+}
+
+.card h3{
+    text-transform: uppercase;
+}
+.card hr{
+    max-width: 55px;
+    margin: 10px auto 20px;
+}
+.card p{
+    line-height: 23px;
+}
+/* receive end */
+
+/* expand */
+
+.expand{
+    background-image: url(../img/Слой\ 18.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.expand .container{
+    padding: 100px 0 15px;
+}
+.expant_info{
+    border: 7px solid #415464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 0 95px;
+    color: white;
+    gap: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.expant_info button{
+    background-color: transparent;
+    border: 1px solid #FC635E;
+    padding: 14px 80px;
+    border-radius: 5px;
+    color: #FC635E;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.expand .container .mouse_down{
+    text-align: center;
+    margin: 55px 0 0;
+}
+/* expand end */
+
+/* process */
+
+.process{
+    position: relative;
+}
+.process .container{
+    position: relative;
+}
+.process .container .process_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.process .container .mouse_down{
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-29%);
+}
+/* process end */
+
+/* we do */
+.we_do{
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+.we_do .container{
+    padding-top: 55px;
+}
+.we_do_header{
+    text-align: center;
+    text-transform: uppercase;
+}
+.we_do_header hr{
+    max-width: 225px;
+    margin: 0 auto;
+}
+.we_do_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.left_card, .right_card{
+    max-width: 400px;
+    color: #808080;
+    line-height: 30px;
+}
+.left_card p{
+    font-size: 12px;
+}
+.left_card_title, .right_card_title{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.we_do_container .right_card{
+    position: relative;
+}
+.we_do_container .right_card::before, .we_do_container .right_card::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.we_do_container .right_card::before{
+    background-image: url(../img/MacBook\ Pro.png);
+    bottom: -155px;
+    left: -90px;
+}
+.we_do_container .right_card::after{
+    background-image: url(../img/iPad\ -\ Portrait.png);
+    bottom: -130px;
+    left: 290px;
+}
+
+.we_do .container .mouse_down, .advertising .container .mouse_down, .marketing_kit .container .mouse_down{
+    padding: 40px 0px 10px;
+    text-align: center;
+}
+/* we do end */
+
+/* advertising */
+.marketing_kit{
+    background-color: #F2F2F2;
+}
+.advertising .container .advertising_content, .marketing_kit .container .marketing_content, .portfolio .container{
+    padding-top: 130px;
+}
+.advertising_container, .marketing_container{
+    display: flex;
+    justify-content: space-between;
+}
+.right_card{
+    text-align: right;
+    max-width: 400px;
+    order: 1;
+}
+.right_card_title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+.right_card_title img{
+    order: 1;
+}
+/* advertising end */
+
+/* marketing kit */
+.marketing_kit .container .right_card{
+    max-width: 100%;
+}
+/* marketing kit end */
+
+/* portfolio */
+
+.portfolio .container .portfolio_header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.portfolio .container .portfolio_header h2{
+    text-transform: uppercase;
+}
+.portfolio .container .portfolio_header hr{
+    max-width: 140px;
+    margin: 0 auto;
+}
+.portfolio .container .portfolio_header .navigation{
+    margin-top: 40px;
+}
+.portfolio .container .portfolio_content{
+    text-align: center;
+}
+.nav{
+    border-top: 1px solid #AEAFAF;
+    border-bottom: 1px solid #AEAFAF;
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+nav .menu > li{
+    position: relative;
+}
+nav .menu > li::after{
+    content: '/';
+    position: absolute;
+    left: -120px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #AEAFAF;
+}
+nav .menu > li:nth-child(1)::after{
+    content: none;
+}
+nav .menu > li:nth-child(2)::after{
+    left: -140px;
+}
+nav .menu > li p{
+    text-transform: uppercase;
+    color: #FC635E;
+}
+.portfolio .container .portfolio_content .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.first_row, .second_row{
+    display: flex;
+    gap: 10px;
+}
+
+.cards .biker, .cards .cars{
+    position: relative;
+    width: 100%;
+}
+.cards .biker img, .cards .cars img{
+    width: 100%;
+    height: 100%;
+}
+.cards .biker h3, .cards .cars h3{
+    position: absolute;
+    top: 10%;left: 5%;
+    color: white;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    transition: all .4s;
+    visibility: hidden;
+}
+.cards .biker::before, .cards .cars::before{
+    content: '+';
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+
+}
+.cards .biker::after, .cards .cars::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background-color: rgba(252, 99, 94, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+
+}
+.cards .biker:hover::after, .cards .cars:hover::after,.cards .biker:hover::before, .cards .cars:hover::before, .cards .biker:hover h3, .cards .cars:hover h3 {
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio_button{
+    margin-top: 60px;
+    padding: 10px 15px;
+}
+.portfolio .container .mouse_down{
+    text-align: center;
+    margin-top: 25px;
+}
+/* portfolio end */
+
+/* our team */
+
+.our_team{
+    background-color: #F2F2F2;
+}
+.our_team .container{
+    padding-top: 50px;
+}
+.our_team .team_header{
+    text-align: center;
+    text-transform: uppercase;
+}
+.our_team .container .team_header hr{
+    max-width: 135px;
+    margin: 0 auto;
+}
+.teammates{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template: 1fr / repeat(3, minmax(250px, 1fr));
+    margin: 70px 0;
+}
+.teammate{
+    text-align: center;
+}
+.teammate .teammate_job{
+    color: #7D7C79;
+    margin: 10px 0;
+    text-align: center;
+}
+.teammate .networks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.our_team .container .mouse_down{
+    text-align: center;
+    padding-bottom: 15px;
+}
+/* our team end */
+
+/* prefooter */
+
+.prefooter .container{
+    padding-top: 50px;
+}
+.prefooter .container .prefooter_header{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.prefooter .container .prefooter_content{
+    display: grid;
+    grid-template: 1fr / repeat(3, minmax(280px, 1fr));
+    place-items: center;
+}
+.prefooter .container .prefooter_content p{
+    max-width: 380px;
+    color: #7D7C79;
+}
+.prefooter .container .prefooter_content .prefooter_mate_data{
+    justify-self: flex-start;
+}
+.prefooter .container .arrows{
+    text-align: center;
+    margin-top: 50px;
+}
+.prefooter .container .arrows img:nth-child(1){
+    transform: rotate(180deg);
+}
+/* prefooter end */
+
+/* footer */
+.footer{
+    margin-top: 150px;
+}
+.map, iframe{
+    width: 100%;
+    position: relative;
+}
+.footer_address, .footer .map img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.address_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 210px;
+    font-size: 12px;
+    color: white;
+}
+.address_title{
+    font-size: 28px;
+}
+.address_text{
+    padding: 0 35px;
+}
+.footer_logo{
+    background-image: url(../img/Слой\ 19.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: -10px 0;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer_logo::before{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background-color: rgba(44, 44, 44, 0.7);
+}
+.footer_logo img, .footer_logo div{
+    z-index: 1;
+}
+.footer_logo div{
+    text-transform: capitalize;
+    font-weight: 800;
+    color: white;
+    font-size: 24px;
+}
+/* footer end */
